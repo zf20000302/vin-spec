@@ -18,7 +18,7 @@ Understand the methods in each source skill individually. Then discuss whether t
 
 Credit every skill actually consulted, adopted, or adapted. Record its source and the parts borrowed, and distinguish the original instructions from my ideas and Codex's suggestions.
 
-The source register is planned as `SOURCES.md` at the root of this repository. It still needs to be compiled and created.
+The source register is [SOURCES.md](SOURCES.md) at the root of this repository. It records source versions, borrowed methods, and adaptations.
 
 ## Research and Mathematics
 
@@ -27,7 +27,7 @@ The research workflow currently under discussion is:
 1. Map the literature related to the topic, its main research directions, and the value of reading each paper.
 2. Learn about important journals, classic papers, and highly cited work, then decide the reading order.
 3. Read the selected papers closely, paragraph by paragraph.
-4. I lead the questions and explain my understanding in my own words. Codex checks it, identifies conceptual gaps, and gradually fills in the mathematical derivations.
+4. In guided-reading mode, Codex leads chapter by chapter, I explain my understanding and answer questions, and I can interrupt to ask for explanations or additional derivations.
 5. Implement code and compare the theory with practical results.
 
 My standard for understanding a mathematical theory is being able to derive it independently, by hand, on a whiteboard.
@@ -41,4 +41,4 @@ The working environments covered include MATLAB, Ubuntu, ROS / ROS 2, C++, and P
 
 ## Current Status
 
-The rules and candidate skills are being discussed individually. Skill selection, naming, invocation, recordkeeping, and the practical steps for resuming work across computers will be settled as the discussions progress.
+The first paper-guide mode is defined in [SKILL.md](skills/vin-spec/SKILL.md) and its [reading guide](skills/vin-spec/references/paper-guide.md). It supports explicit and natural invocation once loaded into Codex. Other workflows remain under discussion; installation and verification on each computer are separate setup steps.
