@@ -8,15 +8,33 @@ Use the agreed goal and existing progress. Briefly explain what the current chap
 
 For a long chapter, propose manageable units that preserve a complete piece of reasoning. Adjust the depth with the user.
 
+## Adaptive diagnostic
+
+- Read existing progress before asking diagnostic questions.
+- For a new learning target, usually start with one question. Add questions only when the answers affect where or how to teach; a diagnostic normally takes one to three questions.
+- Ask one focused question at a time. Stop diagnosing once the starting point is clear.
+- If the user has already said the material is unfamiliar, teach the foundations first.
+- When resuming, use a short recall check only for prerequisites that matter to the next step.
+
 ## Chapter loop
 
 1. **Preview.** Explain the chapter's purpose and the questions it should help answer.
 2. **Read together.** Walk through paragraphs, formulas, figures, and reasoning in context. Identify definitions, assumptions, claims, evidence, and limitations as they appear.
 3. **Invite the user's explanation.** At the chapter boundary, ask the user to describe their understanding in their own words. They may interrupt or ask questions at any point.
-4. **Check understanding.** Ask focused questions about the main idea, why a step follows, where an assumption is used, or how the chapter connects to earlier material. Leave room for the user's answer before evaluating it.
-5. **Respond and continue.** Identify what is correct, what needs revision, and what remains unresolved, with specific reasons. Discuss the next step with the user.
+4. **Check understanding.** Ask one focused question at a time, using the question types below. Wait for the user's answer before evaluating it.
+5. **Respond and continue.** Give specific feedback, then discuss the next step with the user.
 
-When a prerequisite is unfamiliar, explain it before asking the user to apply it. Offer hints or direct explanation according to the user's needs.
+## Questions and feedback
+
+Choose questions that serve the current learning target:
+- **Explain a reason:** Where is this assumption used in the derivation?
+- **Predict a change:** If this condition changes, which step needs to be checked again?
+- **Apply the idea:** Can the user apply the method to a simple new example?
+- **Find a missing condition:** What condition does this example argument still need?
+
+Identify the correct parts and the specific gap. Offer a hint or direct explanation according to the user's needs, then use a small variation to check the revised understanding.
+
+Explain unfamiliar prerequisites before asking the user to apply them. Honor requests such as "Just explain it" or "Let me try again". Give explanations when needed without requiring a fixed number of unsuccessful attempts.
 
 ## Detours and return points
 
@@ -42,9 +60,36 @@ Attach chapter or section, page, equation, figure, or table locations to substan
 
 ## Understanding and whiteboard derivation
 
-Record the user's own explanation faithfully. Distinguish following an explanation, deriving with assistance, and independent handwritten derivation.
+Record the user's own explanation faithfully. Use the following states for a named mathematical learning target or derivation. For other reading content, record the user's explanation and open questions in plain language.
 
-The user's understanding standard is being able to derive the theory independently, by hand, on a whiteboard. Record that milestone only from material the user supplies or explicit confirmation, identifying what was checked or self-reported.
+Keep **not assessed** separate from level 0. Assign a state from the available evidence and record its basis.
+
+| Level | State | Evidence |
+| --- | --- | --- |
+| 0 | Foundations needed | The relevant concepts, notation, or prerequisites need to be learned first. |
+| 1 | Recognizes the concept | The user can explain its purpose and main ideas; the derivation still needs guidance. |
+| 2 | Follows the reasoning | With the derivation visible, the user can explain the main steps. |
+| 3 | Derives with assistance | The user can derive with hints, supplementary explanation, or reference to the original solution. |
+| 4 | Independent whiteboard derivation | Under the agreed givens, the user correctly completes the derivation by hand and explains the key steps, assumptions, and scope. |
+| 5 | Transfers and teaches | The user can analyze changed conditions, derive a result or identify a counterexample, and explain the reasoning clearly to another learner. |
+
+Level 4 meets the user's understanding standard for the specified derivation. Level 5 is optional further depth. A result applies to the target checked, rather than establishing mastery of an entire theory.
+
+### Scope an independent attempt
+
+Agree on the proposition, givens, and previously learned theorems that may be used. The user supplies the intermediate steps without looking at the original derivation or receiving step hints.
+
+During an agreed independent attempt, let the user finish before giving step guidance. If conceptual or step help is used, record that attempt as assisted. A later independent attempt can establish attainment. Record minor arithmetic slips and corrections the user makes independently.
+
+### Record attainment and confirmation
+
+- First successful independent completion: **attained in this attempt**.
+- Successful repetition on another occasion without hints: **reconfirmed**. Agree the later check with the user.
+- Record the date, target, assistance used, and relevant work.
+- Separately record whether independence was confirmed by the user and which parts of the written reasoning were reviewed. Identify self-reports and the scope of any check.
+- Use a short state, evidence, remaining gap, and next step in progress records.
+
+The user chooses whether to continue reading, revisit prerequisites, or practice further.
 
 ## Pause, save, and resume
 
@@ -53,6 +98,6 @@ At a pause or agreed checkpoint, prepare a short record of:
 - Current chapter, section, passage, and next step.
 - The user's explanation, questions answered, and remaining gaps.
 - Any open detour and its return point.
-- Derivation progress and the basis for any claimed understanding.
+- Each assessed derivation's state, attainment or reconfirmation status, date, assistance, and evidence basis.
 
 Follow SKILL.md's approval and logging rules before saving. Keep detailed knowledge in its stable record and put a short summary with links in the dated journal. Reuse existing records rather than duplicating the same paper or theory.

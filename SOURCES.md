@@ -17,12 +17,22 @@ These decisions are recorded separately from the upstream authors' rules.
 | [literature-guide-read](https://github.com/Liangzhen-Chen/literature-guide-read/blob/f47dbd8a5ca7d5568b60c2d8da53125257f9e2c9/SKILL.md) and its [reading method](https://github.com/Liangzhen-Chen/literature-guide-read/blob/f47dbd8a5ca7d5568b60c2d8da53125257f9e2c9/references/method.md), Liangzhen-Chen / literature-guide-read contributors | Passage-level grounding; identifying paragraph roles, definitions, formulas, evidence, and qualifications; connecting reasoning steps; part-by-part walkthroughs and recall questions. |
 | [literature-review](https://github.com/K-Dense-AI/scientific-agent-skills/blob/ec59a29a03d5c40f73ab40878df04860bc00e876/skills/literature-review/SKILL.md), K-Dense Inc., v1.11 | Linking summarized claims to the actual source and preserving the scope of the supporting evidence. Its complete search and review workflow is not implemented in this version. |
 | [scientific-critical-thinking](https://github.com/K-Dense-AI/scientific-agent-skills/blob/ec59a29a03d5c40f73ab40878df04860bc00e876/skills/scientific-critical-thinking/SKILL.md), K-Dense Inc., v1.5 | Attention to assumptions, reasoning, claim scope, and the distinction between missing information and a demonstrated error. Its full appraisal workflow is not implemented in this version. |
+| [socratic-tutor](https://github.com/janestreet/agent_skills/blob/469868f4489cbdbe178c775a0af05bb6bef63689/socratic-tutor/SKILL.md), Jane Street Group, LLC | Focused questions about reasons, predictions, new examples, and missing conditions; evidence-based feedback and progress checks. The diagnostic and 0–5 states are adapted below. |
 
 Reviewed snapshots:
 - literature-guide-read: f47dbd8a5ca7d5568b60c2d8da53125257f9e2c9.
 - Scientific Agent Skills: ec59a29a03d5c40f73ab40878df04860bc00e876.
+- Jane Street agent_skills: 469868f4489cbdbe178c775a0af05bb6bef63689.
 
 The adaptation uses a conversational chapter loop, user-directed detours, explicit return points, and vin-log checkpoints. Upstream HTML generation, scripts, assets, and fixed reading-density quotas are not included in this draft. Detailed mathematical checking also reflects the user's requirements and the design discussion.
+
+## Socratic adaptation
+
+- Use an adaptive diagnostic, normally one to three questions, informed by existing progress. Teach unfamiliar prerequisites before asking the user to apply them.
+- Ask one focused question at a time, give specific feedback, and provide hints or direct explanation according to the user's needs.
+- Redefine the 0–5 progression for named mathematical targets. Keep not assessed separate from level 0, make independent handwritten derivation the level-4 target, and use level 5 for optional transfer and teaching.
+- Distinguish attainment in one attempt from reconfirmation on another occasion. Record the date, assistance, the user's confirmation of independence, and which written reasoning was reviewed.
+- Detailed rules are in paper-guide.md. The upstream fixed diagnostic gate, mandatory failed attempts before explanation, automatic progress graphics, and unannounced retests are not carried over.
 
 ## Authoring and preparation support
 
@@ -37,7 +47,6 @@ Local authoring and preparation revisions are not pinned in this register. These
 
 | Skill | Status |
 | --- | --- |
-| [socratic-tutor](https://github.com/janestreet/agent_skills/blob/master/socratic-tutor/SKILL.md) | Consulted; detailed questioning and feedback rules remain to be reviewed with the user. |
 | [learning-coach](https://github.com/cheng-dp/learning-coach-skill/blob/main/SKILL.md) | Consulted for learning continuity; its course files and full workflow were not imported. |
 | [citation-management](https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/citation-management/SKILL.md) | Consulted; a dedicated bibliography workflow remains pending. |
 | [hypothesis-generation](https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/hypothesis-generation/SKILL.md) | Consulted; research-question and experiment-planning integration remains pending. |
@@ -48,7 +57,7 @@ Add future sources and describe their actual contribution when they are consulte
 
 ## Upstream MIT notices
 
-The upstream license files are [literature-guide-read LICENSE](https://github.com/Liangzhen-Chen/literature-guide-read/blob/f47dbd8a5ca7d5568b60c2d8da53125257f9e2c9/LICENSE) and [Scientific Agent Skills LICENSE.md](https://github.com/K-Dense-AI/scientific-agent-skills/blob/ec59a29a03d5c40f73ab40878df04860bc00e876/LICENSE.md).
+The upstream license files are [literature-guide-read LICENSE](https://github.com/Liangzhen-Chen/literature-guide-read/blob/f47dbd8a5ca7d5568b60c2d8da53125257f9e2c9/LICENSE), [Scientific Agent Skills LICENSE.md](https://github.com/K-Dense-AI/scientific-agent-skills/blob/ec59a29a03d5c40f73ab40878df04860bc00e876/LICENSE.md), and [Jane Street agent_skills LICENSE.md](https://github.com/janestreet/agent_skills/blob/469868f4489cbdbe178c775a0af05bb6bef63689/LICENSE.md).
 
 MIT License
 
@@ -57,6 +66,9 @@ Copyright (c) 2026 literature-guide-read contributors
 
 For Scientific Agent Skills:
 Copyright (c) 2025 K-Dense Inc.
+
+For socratic-tutor:
+Copyright (c) 2026 Jane Street Group, LLC <opensource-contacts@janestreet.com>
 
 The following permission and warranty text is shared by those upstream licenses:
 
