@@ -24,6 +24,7 @@ These decisions are recorded separately from the upstream authors' rules. Explic
 | [citation-management](https://github.com/K-Dense-AI/scientific-agent-skills/blob/ec59a29a03d5c40f73ab40878df04860bc00e876/skills/citation-management/SKILL.md), K-Dense Inc., v2.3 | Source identity and version checks, metadata reconciliation, reference formatting, deduplication, and separation of bibliographic accuracy from source-to-claim support. |
 | [systematic-debugging](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/systematic-debugging/SKILL.md), Jesse Vincent / obra | Reproduction, evidence gathering, data-flow and working-case comparison, candidate-cause testing, scoped fixes, and verified outcomes. |
 | [verification-before-completion](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/verification-before-completion/SKILL.md), Jesse Vincent / obra | Evidence before completion claims, matching checks to the claim, inspecting results, and stating the actual verified scope. |
+| SDD conceptual references: [OpenSpec workflow](https://github.com/Fission-AI/OpenSpec/blob/0c737dc1b543249b38b0f4716816fcf493d894dd/README.md) and [Spec Kit SDD overview](https://github.com/github/spec-kit/blob/a4d571229e164e440f8950cac034607bae7b7518/README.md) | Requirements, design, tasks, implementation, and iterative verification as a project workflow. The user's arrangement-confirmation gate, one-document starting format, and repository roles determine the adaptation. Framework setup remains optional and unimplemented. |
 
 Reviewed snapshots:
 - literature-guide-read: f47dbd8a5ca7d5568b60c2d8da53125257f9e2c9.
@@ -133,6 +134,25 @@ adaptation of hypothesis-generation.
   testing, repeated full-suite requirements, rhetoric, fixed stop gates,
   and mandatory delegation are not imported.
 
+## SDD adaptation
+
+- Start from one complete useful workflow and concrete acceptance examples.
+- Begin a small project with requirements/acceptance, design/arrangement,
+  and tasks/verification as sections in one project document.
+- Present an algorithm proposal with the adoption recommendation and
+  before implementation, including its architecture diagram, subsystem
+  responsibilities, inputs, outputs, reasoning, and planned checks.
+  This requirement is an explicit user contribution.
+- Confirm exact folder and file placement, module roles, interfaces,
+  dependencies, and reasons with the user before creating or reorganizing.
+- Implement within the confirmed arrangement and reuse the existing
+  code-reading, debugging, verification, and learning workflows as relevant.
+- Keep project specifications authoritative in the actual project repository;
+  keep personal understanding and linked progress in vin-log.
+- The above decisions are user-confirmed. OpenSpec and Spec Kit are
+  conceptual references, with no generated project layout, commands,
+  configuration, or runtime dependency imported.
+
 ## Authoring and preparation support
 
 - **skill-creator**, supplied with Codex: consulted for scope, concise instructions, and supporting references.
@@ -150,14 +170,14 @@ Local authoring and preparation revisions are not pinned in this register. These
 | Superpowers: [test-driven-development](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/test-driven-development/SKILL.md) | Consulted as a candidate for writing tests before implementation and checking regressions; its mandatory test policy is not adopted. |
 | Superpowers: [requesting-code-review](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/requesting-code-review/SKILL.md) and [receiving-code-review](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/receiving-code-review/SKILL.md) | Consulted for review preparation and evaluating feedback; no review or delegation workflow is adopted. |
 | Superpowers: [using-git-worktrees](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/using-git-worktrees/SKILL.md) and [finishing-a-development-branch](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/finishing-a-development-branch/SKILL.md) | Consulted for workspace isolation and delivery; workspace creation and branch operations are not enabled by this register. |
-| [OpenSpec](https://github.com/Fission-AI/OpenSpec/blob/0c737dc1b543249b38b0f4716816fcf493d894dd/README.md) | Consulted its requirements, design, task, implementation, and archive workflow as an engineering alternative. No OpenSpec setup or workflow is adopted. |
-| [Spec Kit](https://github.com/github/spec-kit/blob/a4d571229e164e440f8950cac034607bae7b7518/README.md) | Consulted the Spec-Driven Development overview for discussion of a new project and its first usable version. No Spec Kit setup or SDD workflow is adopted. |
+| [OpenSpec](https://github.com/Fission-AI/OpenSpec/blob/0c737dc1b543249b38b0f4716816fcf493d894dd/README.md) | Its conceptual workflow informs the SDD adaptation above; OpenSpec-specific setup, generated layout, and execution remain pending. |
+| [Spec Kit](https://github.com/github/spec-kit/blob/a4d571229e164e440f8950cac034607bae7b7518/README.md) | Its conceptual workflow informs the SDD adaptation above; Spec Kit-specific setup, generated layout, and execution remain pending. |
 
 Add future sources and describe their actual contribution when they are consulted or adopted.
 
 ## Upstream MIT notices
 
-The upstream license files are [literature-guide-read LICENSE](https://github.com/Liangzhen-Chen/literature-guide-read/blob/f47dbd8a5ca7d5568b60c2d8da53125257f9e2c9/LICENSE), [Scientific Agent Skills LICENSE.md](https://github.com/K-Dense-AI/scientific-agent-skills/blob/ec59a29a03d5c40f73ab40878df04860bc00e876/LICENSE.md), [Jane Street agent_skills LICENSE.md](https://github.com/janestreet/agent_skills/blob/469868f4489cbdbe178c775a0af05bb6bef63689/LICENSE.md), [Learning Coach Skill LICENSE](https://github.com/cheng-dp/learning-coach-skill/blob/a64963bee49fee0e3aba1b5af648e545bb48bba0/LICENSE), [learn-codebase LICENSE](https://github.com/ktaletsk/learn-codebase/blob/06534bcba81ad14159b372cf4f636abc04d2fe66/LICENSE), and [Superpowers LICENSE](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/LICENSE).
+The upstream license files are [literature-guide-read LICENSE](https://github.com/Liangzhen-Chen/literature-guide-read/blob/f47dbd8a5ca7d5568b60c2d8da53125257f9e2c9/LICENSE), [Scientific Agent Skills LICENSE.md](https://github.com/K-Dense-AI/scientific-agent-skills/blob/ec59a29a03d5c40f73ab40878df04860bc00e876/LICENSE.md), [Jane Street agent_skills LICENSE.md](https://github.com/janestreet/agent_skills/blob/469868f4489cbdbe178c775a0af05bb6bef63689/LICENSE.md), [Learning Coach Skill LICENSE](https://github.com/cheng-dp/learning-coach-skill/blob/a64963bee49fee0e3aba1b5af648e545bb48bba0/LICENSE), [learn-codebase LICENSE](https://github.com/ktaletsk/learn-codebase/blob/06534bcba81ad14159b372cf4f636abc04d2fe66/LICENSE), [Superpowers LICENSE](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/LICENSE), [OpenSpec LICENSE](https://github.com/Fission-AI/OpenSpec/blob/0c737dc1b543249b38b0f4716816fcf493d894dd/LICENSE), and [Spec Kit LICENSE](https://github.com/github/spec-kit/blob/a4d571229e164e440f8950cac034607bae7b7518/LICENSE).
 
 MIT License
 
@@ -178,6 +198,12 @@ Copyright (c) 2026 Konstantin Taletskiy
 
 For systematic-debugging and verification-before-completion:
 Copyright (c) 2025 Jesse Vincent
+
+For OpenSpec:
+Copyright (c) 2025 FISSION AI INC
+
+For Spec Kit:
+Copyright GitHub, Inc.
 
 The following permission and warranty text is shared by those upstream licenses:
 

@@ -13,6 +13,7 @@ This system should help me understand the work, participate in reasoning and imp
 - Before adding files or folders to vin-spec or vin-log, show the exact paths, names, purposes, and contents for my confirmation. Reuse approval only for the placement and arrangement I have already confirmed.
 - Confirm project folder structures, module roles, code placement, and their relationships with me before creating or reorganizing them, including moves, renames, file splits, and merges.
 - I may delegate automatic content integration within an agreed task and confirmed arrangement. Changes to that arrangement still require my confirmation.
+- When recommending an algorithm for adoption, or before implementing it, present an algorithm proposal with an architecture diagram and an explanation of each subsystem. Keep algorithm approval separate from confirmation of folder and code placement.
 
 ## Adapting Skills
 
@@ -45,13 +46,14 @@ The working environments covered include MATLAB, Ubuntu, ROS / ROS 2, C++, and P
 
 ## Current Status
 
-The [vin-spec entry](skills/vin-spec/SKILL.md) provides nine connected modes:
+The [vin-spec entry](skills/vin-spec/SKILL.md) provides ten connected modes:
 
 - [literature-review](skills/vin-spec/references/literature-review.md) for field mapping, paper selection, metric comparison, and synthesis.
 - [scientific-critical-thinking](skills/vin-spec/references/scientific-critical-thinking.md) for claim, assumption, derivation, validation, and applicability appraisal.
 - [citation-management](skills/vin-spec/references/citation-management.md) for source identity, versions, references, and claim-support checks.
 - [paper-guide](skills/vin-spec/references/paper-guide.md) for guided paper reading and independent derivation assessment.
 - [learning-coach](skills/vin-spec/references/learning-coach.md) for learning routes, cumulative progress, and continuity.
+- [spec-driven-development](skills/vin-spec/references/spec-driven-development.md) for project requirements, confirmed folder and code arrangement, tasks, implementation, and verification.
 - [hypothesis-generation](skills/vin-spec/references/hypothesis-generation.md) for research questions, rival explanations, and verification plans.
 - [learn-codebase](skills/vin-spec/references/learn-codebase.md) for guided implementation reading, data flow, and formula-to-code mapping.
 - [systematic-debugging](skills/vin-spec/references/systematic-debugging.md) for evidence-based failure investigation and scoped correction.
@@ -61,6 +63,7 @@ All modes share explicit and natural entry methods once loaded into Codex.
 The selected Socratic rules are incorporated into paper-guide and reused
 where relevant.
 
-SDD, OpenSpec, Spec Kit, and other engineering candidates remain under
-discussion as recorded in [SOURCES.md](SOURCES.md). Installation and
+The SDD mode follows the agreed method. OpenSpec and Spec Kit tool
+integration and other engineering candidates remain under discussion
+as recorded in [SOURCES.md](SOURCES.md). Installation and
 verification on each computer are separate setup steps.

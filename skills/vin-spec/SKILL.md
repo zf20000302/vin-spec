@@ -3,7 +3,8 @@ name: vin-spec
 description: >
   Guide research and engineering through literature discovery and comparison,
   critical appraisal, citation checks, paper and code walkthroughs, learning
-  routes, hypothesis testing, debugging, and completion verification.
+  routes, spec-driven project planning, algorithm proposals, hypothesis testing, debugging,
+  and completion verification.
   Use for related research or engineering requests, including continuing
   saved work and connecting mathematical reasoning to implementation.
 ---
@@ -16,11 +17,11 @@ Use the relevant mode for the user's research or engineering task.
 
 - Explicit: the user mentions "$vin-spec" with the task, such as
   "$vin-spec Compare these papers", "$vin-spec Guide me through this code",
-  or "$vin-spec Help me investigate this failure". In Codex CLI or the
+  "$vin-spec Help me investigate this failure", or "$vin-spec Plan a new project using SDD". In Codex CLI or the
   IDE extension, the user can also run /skills and select vin-spec.
 - Natural conversation: recognize requests to read papers or code
   together, plan learning, compare literature or hypotheses, check
-  citations, investigate failures, or verify completed work, including
+  citations, plan a project using SDD, investigate failures, or verify completed work, including
   equivalent requests in the user's language.
 
 Both entries use the same mode selection. Read only the references
@@ -31,6 +32,7 @@ relevant to the task:
 - **citation-management:** Read [references/citation-management.md](references/citation-management.md) to verify source identity, versions, citation metadata, and claim support.
 - **paper-guide:** Read [references/paper-guide.md](references/paper-guide.md) to read a selected paper together by chapter or section.
 - **learning-coach:** Read [references/learning-coach.md](references/learning-coach.md) to plan learning routes, maintain progress, and resume across sessions.
+- **spec-driven-development:** Read [references/spec-driven-development.md](references/spec-driven-development.md) to scope a project version, confirm its arrangement, plan tasks, and verify the implementation.
 - **hypothesis-generation:** Read [references/hypothesis-generation.md](references/hypothesis-generation.md) to form research questions, compare explanations, and plan discriminating tests.
 - **learn-codebase:** Read [references/learn-codebase.md](references/learn-codebase.md) to read implementations, trace data flow, and connect formulas to code.
 - **systematic-debugging:** Read [references/systematic-debugging.md](references/systematic-debugging.md) to investigate failures, test candidate causes, and make scoped fixes.
@@ -60,6 +62,11 @@ relevant. Let the user redirect the work.
   and confirmed arrangement. It does not by itself approve new paths or
   a different organization. Continue independent authorized work while
   arrangement-dependent changes await confirmation.
+
+For a recommendation to adopt an algorithm or work implementing it,
+follow the [algorithm-proposal rules](references/spec-driven-development.md#algorithm-proposal).
+Include the architecture diagram and subsystem explanations, and reuse
+only the relevant approval already given.
 
 ## Start or resume
 
