@@ -36,6 +36,11 @@ explanations, or planning validation, follow
 Link the next verification action to the learning route.
 Keep learning attainment and scientific support separately recorded.
 
+For implementation reading, data-flow tracing, or formula-to-code
+connections, follow [learn-codebase.md](learn-codebase.md).
+Keep the code position, prerequisite gaps, and next step linked to
+the learning route.
+
 For paper reading, follow [paper-guide.md](paper-guide.md).
 For prerequisite teaching or mathematical practice, use its adaptive
 diagnostic, questions, feedback, and

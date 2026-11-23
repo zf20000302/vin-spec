@@ -29,7 +29,8 @@ The research workflow currently under discussion is:
 3. Read the selected papers closely, paragraph by paragraph.
 4. In guided-reading mode, Codex leads chapter by chapter, I explain my understanding and answer questions, and I can interrupt to ask for explanations or additional derivations.
 5. Develop research questions and candidate explanations from the literature and derivations, compare their predictions, and plan appropriate verification.
-6. Implement code and compare the theory with practical results.
+6. Read relevant implementations, trace data flow, and connect formulas to code before or while making scoped changes.
+7. Implement code and compare the theory with practical results.
 
 My standard for understanding a mathematical theory is being able to derive it independently, by hand, on a whiteboard.
 
@@ -50,7 +51,9 @@ The [vin-spec entry](skills/vin-spec/SKILL.md) provides:
   for learning routes, cumulative progress, and continuity across sessions.
 - [hypothesis-generation](skills/vin-spec/references/hypothesis-generation.md)
   for research questions, competing explanations, and verification plans.
+- [learn-codebase](skills/vin-spec/references/learn-codebase.md)
+  for guided code reading, execution and data-flow tracing, and formula-to-code connections.
 
-All three modes use the same explicit and natural entry methods once
+All four modes use the same explicit and natural entry methods once
 loaded into Codex. Other workflows remain under discussion;
 installation and verification on each computer are separate setup steps.

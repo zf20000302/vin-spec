@@ -1,30 +1,31 @@
 ---
 name: vin-spec
 description: >
-  Guide research learning and develop testable questions from literature
-  and derivations. Support guided paper reading, learning routes, rival
-  explanations, and mathematical, computational, or empirical validation
-  plans. Use when the user asks for a paper walkthrough, a learning route,
-  continuation of research learning, a research question, hypothesis
-  comparison, or test design.
+  Guide research learning and codebase understanding, and develop testable
+  questions from literature and derivations. Support guided paper and code
+  reading, learning routes, formula-to-code mapping, rival explanations,
+  and verification plans. Use for a paper or implementation walkthrough,
+  execution or data-flow tracing, learning continuation, research-question
+  formulation, hypothesis comparison, or test design.
 ---
 
 # vin-spec
 
-This version provides the paper-guide, learning-coach, and hypothesis-generation modes. Other workflows are still being designed.
+This version provides the paper-guide, learning-coach, hypothesis-generation, and learn-codebase modes. Other workflows are still being designed.
 
 ## Two ways to start
 
-- Explicit: the user mentions "$vin-spec Guide me through this paper", "$vin-spec Plan my learning route for this research topic", or "$vin-spec Turn these papers and derivations into a testable research question", or, in Codex CLI or the IDE extension, runs /skills and selects vin-spec.
-- Natural conversation: recognize requests such as "Read this paper with me", "Help me plan what to learn for this research topic", "Continue our last learning session", or "Help me compare explanations and plan a test", including equivalent requests in the user's language.
+- Explicit: the user mentions "$vin-spec Guide me through this paper", "$vin-spec Plan my learning route for this research topic", "$vin-spec Turn these papers and derivations into a testable research question", or "$vin-spec Walk me through this implementation and trace its data flow", or, in Codex CLI or the IDE extension, runs /skills and selects vin-spec.
+- Natural conversation: recognize requests such as "Read this paper with me", "Help me plan what to learn for this research topic", "Continue our last learning session", "Help me compare explanations and plan a test", or "Show me how this equation is implemented", including equivalent requests in the user's language.
 
 Both entries use the same mode selection:
 
 - **paper-guide:** Read [references/paper-guide.md](references/paper-guide.md) for guided reading of a selected paper.
 - **learning-coach:** Read [references/learning-coach.md](references/learning-coach.md) to plan or revise a research learning route, or resume work across papers, concepts, derivations, and implementation practice.
 - **hypothesis-generation:** Read [references/hypothesis-generation.md](references/hypothesis-generation.md) to formulate research questions, compare candidate explanations, derive discriminating predictions, and plan verification.
+- **learn-codebase:** Read [references/learn-codebase.md](references/learn-codebase.md) for guided implementation reading, execution and data-flow tracing, and connections between formulas and code.
 
-Use the references relevant to the request. Paper-guide supplies the reading, questions, feedback, and derivation rules. Learning-coach coordinates the learning route. Hypothesis-generation connects evidence and reasoning to research questions and tests.
+Use the references relevant to the request. Paper-guide supplies the reading, questions, feedback, and derivation rules. Learning-coach coordinates the learning route. Hypothesis-generation connects evidence and reasoning to research questions and tests. Learn-codebase guides understanding of implementations and their mathematical connections.
 
 Within an active session, follow requests such as "Next section", "Explain this concept first", "Return to the paper", and "Pause and save our progress". Answer isolated concept questions directly; use the reading context when relevant.
 
@@ -38,10 +39,10 @@ Within an active session, follow requests such as "Next section", "Explain this 
 
 ## Start or resume
 
-1. Identify the research or learning goal and relevant topic or project. For paper reading, locate the paper and its version. Ask only for missing information that affects the session.
+1. Identify the research or learning goal and relevant topic or project. For paper or code reading, locate the source and its version. Ask only for missing information that affects the session.
 2. Use the configured vin-log location or authenticated connection to read relevant existing progress. Ask when the location or access is unavailable.
 3. Briefly state the current position, remaining gap, and suggested next action. Follow the relevant mode.
-4. Base continuation on the latest successfully synced record. If the source version changed, verify the passage before resuming.
+4. Base continuation on the latest successfully synced record. If the source version changed, verify the relevant passage or code before resuming.
 
 ## Records
 

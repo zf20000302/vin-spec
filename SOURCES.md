@@ -20,12 +20,16 @@ These decisions are recorded separately from the upstream authors' rules.
 | [socratic-tutor](https://github.com/janestreet/agent_skills/blob/469868f4489cbdbe178c775a0af05bb6bef63689/socratic-tutor/SKILL.md), Jane Street Group, LLC | Focused questions about reasons, predictions, new examples, and missing conditions; evidence-based feedback and progress checks. The diagnostic and 0–5 states are adapted below. |
 | [learning-coach](https://github.com/cheng-dp/learning-coach-skill/blob/a64963bee49fee0e3aba1b5af648e545bb48bba0/SKILL.md) and its [workflow references](https://github.com/cheng-dp/learning-coach-skill/tree/a64963bee49fee0e3aba1b5af648e545bb48bba0/references), cheng-dp / Learning Coach Skill contributors | Goal-based milestones, progress-informed session planning, durable checkpoints, adaptive routes, and targeted review. Adapted to the existing vin-log classification and whiteboard-derivation standard. |
 | [hypothesis-generation](https://github.com/K-Dense-AI/scientific-agent-skills/blob/ec59a29a03d5c40f73ab40878df04860bc00e876/skills/hypothesis-generation/SKILL.md), K-Dense Inc., v2.4 | Evidence-bounded research questions, candidate and rival explanations, discriminating predictions, measurement and test design, uncertainty, and transparent separation of planned and exploratory work. |
+| [learn-codebase](https://github.com/ktaletsk/learn-codebase/blob/06534bcba81ad14159b372cf4f636abc04d2fe66/SKILL.md), its [question patterns](https://github.com/ktaletsk/learn-codebase/blob/06534bcba81ad14159b372cf4f636abc04d2fe66/QUESTION-PATTERNS.md), and [journal template](https://github.com/ktaletsk/learn-codebase/blob/06534bcba81ad14159b372cf4f636abc04d2fe66/JOURNAL-TEMPLATE.md), Konstantin Taletskiy / ktaletsk | Code-grounded questions, prediction and execution tracing, specific feedback, and cumulative learning records. Formula-to-code mapping and vin-log integration are adapted to the user's requirements. |
 
 Reviewed snapshots:
 - literature-guide-read: f47dbd8a5ca7d5568b60c2d8da53125257f9e2c9.
 - Scientific Agent Skills: ec59a29a03d5c40f73ab40878df04860bc00e876.
 - Jane Street agent_skills: 469868f4489cbdbe178c775a0af05bb6bef63689.
 - Learning Coach Skill: a64963bee49fee0e3aba1b5af648e545bb48bba0.
+- learn-codebase: 06534bcba81ad14159b372cf4f636abc04d2fe66.
+- Superpowers, consulted engineering candidates: 22f0b463e7a5e579904dd6211a520321035526f7.
+- OpenSpec, consulted workflow overview: 0c737dc1b543249b38b0f4716816fcf493d894dd.
 
 The adaptation uses a conversational chapter loop, user-directed detours, explicit return points, and vin-log checkpoints. Upstream HTML generation, scripts, assets, and fixed reading-density quotas are not included in this draft. Detailed mathematical checking also reflects the user's requirements and the design discussion.
 
@@ -74,6 +78,24 @@ Agent Skills snapshot listed above.
 The existing Scientific Agent Skills MIT notice also covers this
 adaptation of hypothesis-generation.
 
+## Learn-codebase adaptation
+
+- Start from the user's goal and a relevant execution path. Ground
+  data-flow and behavior explanations in the actual code and version.
+- Add formula-to-code mapping, assumptions, dimensions, update order,
+  numerical choices, and small-case checks as user-confirmed extensions.
+- Reuse paper-guide's adaptive questions, direct explanations, feedback,
+  detours, and whiteboard standard. Record code understanding through
+  observed explanations, traces, and predictions.
+- Use the existing vin-log project, paper, derivation, concept, and
+  journal conventions, with precise code positions and return points.
+- Connect guided exploration to implementation or fixes when requested,
+  within the user's authorized scope.
+- The upstream fixed hint ladder, success-percentage target, traffic-light
+  mastery system, timed save and review schedules, Claude-specific
+  settings, and separate journal path are not imported.
+- Preserve both explicit and natural invocation through vin-spec.
+
 ## Authoring and preparation support
 
 - **skill-creator**, supplied with Codex: consulted for scope, concise instructions, and supporting references.
@@ -88,14 +110,18 @@ Local authoring and preparation revisions are not pinned in this register. These
 | Skill | Status |
 | --- | --- |
 | [citation-management](https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/citation-management/SKILL.md) | Consulted; a dedicated bibliography workflow remains pending. |
-| [learn-codebase](https://github.com/ktaletsk/learn-codebase/blob/main/SKILL.md) | Consulted for future code learning and invocation examples; its platform-specific instructions were not imported. |
-| Superpowers: [systematic-debugging](https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md) and [verification-before-completion](https://github.com/obra/superpowers/blob/main/skills/verification-before-completion/SKILL.md) | Consulted for future engineering work; neither workflow is implemented in this version. |
+| Superpowers: [systematic-debugging](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/systematic-debugging/SKILL.md) and [verification-before-completion](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/verification-before-completion/SKILL.md) | Consulted for investigation and evidence-based completion; adaptation remains pending. |
+| Superpowers: [brainstorming](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/brainstorming/SKILL.md), [writing-plans](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/writing-plans/SKILL.md), and [executing-plans](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/executing-plans/SKILL.md) | Consulted as engineering candidates for requirements, implementation planning, and execution; their workflows are not adopted. |
+| Superpowers: [test-driven-development](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/test-driven-development/SKILL.md) | Consulted as a candidate for writing tests before implementation and checking regressions; its mandatory test policy is not adopted. |
+| Superpowers: [requesting-code-review](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/requesting-code-review/SKILL.md) and [receiving-code-review](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/receiving-code-review/SKILL.md) | Consulted for review preparation and evaluating feedback; no review or delegation workflow is adopted. |
+| Superpowers: [using-git-worktrees](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/using-git-worktrees/SKILL.md) and [finishing-a-development-branch](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/finishing-a-development-branch/SKILL.md) | Consulted for workspace isolation and delivery; workspace creation and branch operations are not enabled by this register. |
+| [OpenSpec](https://github.com/Fission-AI/OpenSpec/blob/0c737dc1b543249b38b0f4716816fcf493d894dd/README.md) | Consulted its requirements, design, task, implementation, and archive workflow as an engineering alternative. No OpenSpec setup or workflow is adopted. |
 
 Add future sources and describe their actual contribution when they are consulted or adopted.
 
 ## Upstream MIT notices
 
-The upstream license files are [literature-guide-read LICENSE](https://github.com/Liangzhen-Chen/literature-guide-read/blob/f47dbd8a5ca7d5568b60c2d8da53125257f9e2c9/LICENSE), [Scientific Agent Skills LICENSE.md](https://github.com/K-Dense-AI/scientific-agent-skills/blob/ec59a29a03d5c40f73ab40878df04860bc00e876/LICENSE.md), [Jane Street agent_skills LICENSE.md](https://github.com/janestreet/agent_skills/blob/469868f4489cbdbe178c775a0af05bb6bef63689/LICENSE.md), and [Learning Coach Skill LICENSE](https://github.com/cheng-dp/learning-coach-skill/blob/a64963bee49fee0e3aba1b5af648e545bb48bba0/LICENSE).
+The upstream license files are [literature-guide-read LICENSE](https://github.com/Liangzhen-Chen/literature-guide-read/blob/f47dbd8a5ca7d5568b60c2d8da53125257f9e2c9/LICENSE), [Scientific Agent Skills LICENSE.md](https://github.com/K-Dense-AI/scientific-agent-skills/blob/ec59a29a03d5c40f73ab40878df04860bc00e876/LICENSE.md), [Jane Street agent_skills LICENSE.md](https://github.com/janestreet/agent_skills/blob/469868f4489cbdbe178c775a0af05bb6bef63689/LICENSE.md), [Learning Coach Skill LICENSE](https://github.com/cheng-dp/learning-coach-skill/blob/a64963bee49fee0e3aba1b5af648e545bb48bba0/LICENSE), and [learn-codebase LICENSE](https://github.com/ktaletsk/learn-codebase/blob/06534bcba81ad14159b372cf4f636abc04d2fe66/LICENSE).
 
 MIT License
 
@@ -110,6 +136,9 @@ Copyright (c) 2026 Jane Street Group, LLC <opensource-contacts@janestreet.com>
 
 For learning-coach:
 Copyright (c) 2026 Learning Coach Skill contributors
+
+For learn-codebase:
+Copyright (c) 2026 Konstantin Taletskiy
 
 The following permission and warranty text is shared by those upstream licenses:
 
