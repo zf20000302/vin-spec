@@ -39,6 +39,18 @@ My standard for understanding a mathematical theory is being able to derive it i
 
 The working environments covered include MATLAB, Ubuntu, ROS / ROS 2, C++, and Python, with the details discussed according to each project's needs.
 
+## Engineering Workflow
+
+The SDD mode incorporates the adapted methods from brainstorming,
+writing-plans, executing-plans, test-driven-development,
+requesting-code-review, receiving-code-review, using-git-worktrees,
+and finishing-a-development-branch.
+
+They operate as stages within the same vin-spec entry.
+Use the relevant stage for the task and keep algorithm proposals,
+folder and code placement confirmation, proportionate verification,
+and cumulative progress records.
+
 ## Roles of the Two Repositories
 
 - **vin-spec (public):** Collaboration rules, skills adopted after individual discussion and approval, and their sources.
@@ -53,7 +65,7 @@ The [vin-spec entry](skills/vin-spec/SKILL.md) provides ten connected modes:
 - [citation-management](skills/vin-spec/references/citation-management.md) for source identity, versions, references, and claim-support checks.
 - [paper-guide](skills/vin-spec/references/paper-guide.md) for guided paper reading and independent derivation assessment.
 - [learning-coach](skills/vin-spec/references/learning-coach.md) for learning routes, cumulative progress, and continuity.
-- [spec-driven-development](skills/vin-spec/references/spec-driven-development.md) for project requirements, confirmed folder and code arrangement, tasks, implementation, and verification.
+- [spec-driven-development](skills/vin-spec/references/spec-driven-development.md) for requirements, design choices, confirmed arrangement, plans, implementation, behavior tests, review, and delivery.
 - [hypothesis-generation](skills/vin-spec/references/hypothesis-generation.md) for research questions, rival explanations, and verification plans.
 - [learn-codebase](skills/vin-spec/references/learn-codebase.md) for guided implementation reading, data flow, and formula-to-code mapping.
 - [systematic-debugging](skills/vin-spec/references/systematic-debugging.md) for evidence-based failure investigation and scoped correction.
@@ -63,7 +75,6 @@ All modes share explicit and natural entry methods once loaded into Codex.
 The selected Socratic rules are incorporated into paper-guide and reused
 where relevant.
 
-The SDD mode follows the agreed method. OpenSpec and Spec Kit tool
-integration and other engineering candidates remain under discussion
-as recorded in [SOURCES.md](SOURCES.md). Installation and
+The SDD mode includes the agreed engineering stages. OpenSpec and Spec Kit
+tool integration remains pending as recorded in [SOURCES.md](SOURCES.md). Installation and
 verification on each computer are separate setup steps.

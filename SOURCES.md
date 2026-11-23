@@ -25,6 +25,14 @@ These decisions are recorded separately from the upstream authors' rules. Explic
 | [systematic-debugging](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/systematic-debugging/SKILL.md), Jesse Vincent / obra | Reproduction, evidence gathering, data-flow and working-case comparison, candidate-cause testing, scoped fixes, and verified outcomes. |
 | [verification-before-completion](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/verification-before-completion/SKILL.md), Jesse Vincent / obra | Evidence before completion claims, matching checks to the claim, inspecting results, and stating the actual verified scope. |
 | SDD conceptual references: [OpenSpec workflow](https://github.com/Fission-AI/OpenSpec/blob/0c737dc1b543249b38b0f4716816fcf493d894dd/README.md) and [Spec Kit SDD overview](https://github.com/github/spec-kit/blob/a4d571229e164e440f8950cac034607bae7b7518/README.md) | Requirements, design, tasks, implementation, and iterative verification as a project workflow. The user's arrangement-confirmation gate, one-document starting format, and repository roles determine the adaptation. Framework setup remains optional and unimplemented. |
+| [brainstorming](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/brainstorming/SKILL.md), Jesse Vincent / obra | Context-first clarification, concrete alternatives, trade-offs, and explicit separation of user decisions from proposals. |
+| [writing-plans](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/writing-plans/SKILL.md), Jesse Vincent / obra | Requirement-linked tasks, approved file scope, interfaces, dependencies, concrete checks, and plan consistency. |
+| [executing-plans](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/executing-plans/SKILL.md), Jesse Vincent / obra | Task-by-task execution, current source context, checkpoint evidence, recorded decisions, and resumable progress. |
+| [test-driven-development](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/test-driven-development/SKILL.md), Jesse Vincent / obra | Focused failing behavior checks, minimal implementation, and refinement with justified expectations; applied proportionately. |
+| [requesting-code-review](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/requesting-code-review/SKILL.md), Jesse Vincent / obra | Review context covering requirements, change range, evidence, and located actionable findings. |
+| [receiving-code-review](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/receiving-code-review/SKILL.md), Jesse Vincent / obra | Understanding and checking feedback before changes, evidence-based disagreement, and verified corrections. |
+| [using-git-worktrees](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/using-git-worktrees/SKILL.md), Jesse Vincent / obra | Detecting existing isolation, user-approved workspace arrangement, native-tool preference, and baseline context. |
+| [finishing-a-development-branch](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/finishing-a-development-branch/SKILL.md), Jesse Vincent / obra | Verified completion, explicit delivery choices, integrated-state checks, handoff, and preservation of user work. |
 
 Reviewed snapshots:
 - literature-guide-read: f47dbd8a5ca7d5568b60c2d8da53125257f9e2c9.
@@ -32,7 +40,7 @@ Reviewed snapshots:
 - Jane Street agent_skills: 469868f4489cbdbe178c775a0af05bb6bef63689.
 - Learning Coach Skill: a64963bee49fee0e3aba1b5af648e545bb48bba0.
 - learn-codebase: 06534bcba81ad14159b372cf4f636abc04d2fe66.
-- Superpowers, adopted debugging/verification and consulted engineering candidates: 22f0b463e7a5e579904dd6211a520321035526f7.
+- Superpowers, adapted engineering workflows: 22f0b463e7a5e579904dd6211a520321035526f7.
 - OpenSpec, consulted workflow overview: 0c737dc1b543249b38b0f4716816fcf493d894dd.
 - Spec Kit, consulted SDD overview: a4d571229e164e440f8950cac034607bae7b7518.
 
@@ -153,6 +161,25 @@ adaptation of hypothesis-generation.
   conceptual references, with no generated project layout, commands,
   configuration, or runtime dependency imported.
 
+## Engineering lifecycle adaptation
+
+- Incorporate the eight methods as stages in the existing SDD reference
+  and entry, preserving the confirmed file arrangement.
+- Reuse known context and confirmed choices. Ask only consequential
+  unanswered questions and compare actual viable approaches.
+- Use the existing project document for plans, design, task state, and
+  evidence. Link personal progress from vin-log.
+- Apply test-first cycles to important behavior and meaningful regressions,
+  with independent expected outcomes and justified numerical tolerances.
+- Ground review in requirements, actual changes, and evidence; verify
+  feedback before acting and keep findings proportional to their effects.
+- Create worktrees only under the user's explicit request or approval,
+  with confirmed placement. Reuse authorized delivery instructions.
+- Upstream default artifact paths, visual-companion setup, scripts and
+  ledger directories, compulsory test gates, per-task commits, model
+  choices, mandatory reviewer agents, external posting, and automatic
+  workspace or branch cleanup are not imported.
+
 ## Authoring and preparation support
 
 - **skill-creator**, supplied with Codex: consulted for scope, concise instructions, and supporting references.
@@ -166,10 +193,6 @@ Local authoring and preparation revisions are not pinned in this register. These
 
 | Skill | Status |
 | --- | --- |
-| Superpowers: [brainstorming](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/brainstorming/SKILL.md), [writing-plans](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/writing-plans/SKILL.md), and [executing-plans](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/executing-plans/SKILL.md) | Consulted as engineering candidates for requirements, implementation planning, and execution; their workflows are not adopted. |
-| Superpowers: [test-driven-development](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/test-driven-development/SKILL.md) | Consulted as a candidate for writing tests before implementation and checking regressions; its mandatory test policy is not adopted. |
-| Superpowers: [requesting-code-review](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/requesting-code-review/SKILL.md) and [receiving-code-review](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/receiving-code-review/SKILL.md) | Consulted for review preparation and evaluating feedback; no review or delegation workflow is adopted. |
-| Superpowers: [using-git-worktrees](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/using-git-worktrees/SKILL.md) and [finishing-a-development-branch](https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/finishing-a-development-branch/SKILL.md) | Consulted for workspace isolation and delivery; workspace creation and branch operations are not enabled by this register. |
 | [OpenSpec](https://github.com/Fission-AI/OpenSpec/blob/0c737dc1b543249b38b0f4716816fcf493d894dd/README.md) | Its conceptual workflow informs the SDD adaptation above; OpenSpec-specific setup, generated layout, and execution remain pending. |
 | [Spec Kit](https://github.com/github/spec-kit/blob/a4d571229e164e440f8950cac034607bae7b7518/README.md) | Its conceptual workflow informs the SDD adaptation above; Spec Kit-specific setup, generated layout, and execution remain pending. |
 
@@ -196,7 +219,7 @@ Copyright (c) 2026 Learning Coach Skill contributors
 For learn-codebase:
 Copyright (c) 2026 Konstantin Taletskiy
 
-For systematic-debugging and verification-before-completion:
+For the adapted Superpowers skills:
 Copyright (c) 2025 Jesse Vincent
 
 For OpenSpec:

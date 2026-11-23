@@ -4,7 +4,7 @@ description: >
   Guide research and engineering through literature discovery and comparison,
   critical appraisal, citation checks, paper and code walkthroughs, learning
   routes, spec-driven project planning, algorithm proposals, hypothesis testing, debugging,
-  and completion verification.
+  behavior tests, code review, delivery, and completion verification.
   Use for related research or engineering requests, including continuing
   saved work and connecting mathematical reasoning to implementation.
 ---
@@ -21,7 +21,8 @@ Use the relevant mode for the user's research or engineering task.
   IDE extension, the user can also run /skills and select vin-spec.
 - Natural conversation: recognize requests to read papers or code
   together, plan learning, compare literature or hypotheses, check
-  citations, plan a project using SDD, investigate failures, or verify completed work, including
+  citations, plan or execute project work, review changes, prepare delivery,
+  investigate failures, or verify completed work, including
   equivalent requests in the user's language.
 
 Both entries use the same mode selection. Read only the references
@@ -32,7 +33,7 @@ relevant to the task:
 - **citation-management:** Read [references/citation-management.md](references/citation-management.md) to verify source identity, versions, citation metadata, and claim support.
 - **paper-guide:** Read [references/paper-guide.md](references/paper-guide.md) to read a selected paper together by chapter or section.
 - **learning-coach:** Read [references/learning-coach.md](references/learning-coach.md) to plan learning routes, maintain progress, and resume across sessions.
-- **spec-driven-development:** Read [references/spec-driven-development.md](references/spec-driven-development.md) to scope a project version, confirm its arrangement, plan tasks, and verify the implementation.
+- **spec-driven-development:** Read [references/spec-driven-development.md](references/spec-driven-development.md) for project scope, design choices, algorithm proposals, confirmed arrangement, planning, implementation, behavior tests, review, and delivery.
 - **hypothesis-generation:** Read [references/hypothesis-generation.md](references/hypothesis-generation.md) to form research questions, compare explanations, and plan discriminating tests.
 - **learn-codebase:** Read [references/learn-codebase.md](references/learn-codebase.md) to read implementations, trace data flow, and connect formulas to code.
 - **systematic-debugging:** Read [references/systematic-debugging.md](references/systematic-debugging.md) to investigate failures, test candidate causes, and make scoped fixes.
@@ -40,6 +41,23 @@ relevant to the task:
 
 Answer isolated questions directly and use the active context when
 relevant. Let the user redirect the work.
+
+## Engineering stages within SDD
+
+The following names select stages inside the existing SDD mode.
+They share the vin-spec entry and do not require separate skill folders:
+
+- **brainstorming:** Use [clarify needs and compare viable approaches](references/spec-driven-development.md#clarify-goals-and-compare-approaches).
+- **writing-plans:** Use [write concrete tasks and verification](references/spec-driven-development.md#write-an-actionable-plan).
+- **executing-plans:** Use [implement and keep resumable progress](references/spec-driven-development.md#execute-with-checkpoints).
+- **test-driven-development:** Use [use meaningful test-first behavior checks](references/spec-driven-development.md#test-behavior-before-implementation).
+- **requesting-code-review:** Use [prepare requirements, change scope, and evidence for review](references/spec-driven-development.md#request-and-handle-review).
+- **receiving-code-review:** Use [evaluate feedback before correcting the code](references/spec-driven-development.md#request-and-handle-review).
+- **using-git-worktrees:** Use [arrange explicitly approved workspace isolation](references/spec-driven-development.md#isolate-work-when-needed).
+- **finishing-a-development-branch:** Use [verify, integrate, and hand off authorized work](references/spec-driven-development.md#finish-and-deliver).
+
+Use only the stages relevant to the current task. Preserve prior
+decisions and reuse the user's existing authorization.
 
 ## Working together
 
