@@ -30,6 +30,12 @@ for the change.
 Briefly state the focus, why it comes next, and the intended outcome.
 Let the user redirect the session.
 
+When a milestone involves developing a research question, comparing
+explanations, or planning validation, follow
+[hypothesis-generation.md](hypothesis-generation.md).
+Link the next verification action to the learning route.
+Keep learning attainment and scientific support separately recorded.
+
 For paper reading, follow [paper-guide.md](paper-guide.md).
 For prerequisite teaching or mathematical practice, use its adaptive
 diagnostic, questions, feedback, and

@@ -19,6 +19,7 @@ These decisions are recorded separately from the upstream authors' rules.
 | [scientific-critical-thinking](https://github.com/K-Dense-AI/scientific-agent-skills/blob/ec59a29a03d5c40f73ab40878df04860bc00e876/skills/scientific-critical-thinking/SKILL.md), K-Dense Inc., v1.5 | Attention to assumptions, reasoning, claim scope, and the distinction between missing information and a demonstrated error. Its full appraisal workflow is not implemented in this version. |
 | [socratic-tutor](https://github.com/janestreet/agent_skills/blob/469868f4489cbdbe178c775a0af05bb6bef63689/socratic-tutor/SKILL.md), Jane Street Group, LLC | Focused questions about reasons, predictions, new examples, and missing conditions; evidence-based feedback and progress checks. The diagnostic and 0–5 states are adapted below. |
 | [learning-coach](https://github.com/cheng-dp/learning-coach-skill/blob/a64963bee49fee0e3aba1b5af648e545bb48bba0/SKILL.md) and its [workflow references](https://github.com/cheng-dp/learning-coach-skill/tree/a64963bee49fee0e3aba1b5af648e545bb48bba0/references), cheng-dp / Learning Coach Skill contributors | Goal-based milestones, progress-informed session planning, durable checkpoints, adaptive routes, and targeted review. Adapted to the existing vin-log classification and whiteboard-derivation standard. |
+| [hypothesis-generation](https://github.com/K-Dense-AI/scientific-agent-skills/blob/ec59a29a03d5c40f73ab40878df04860bc00e876/skills/hypothesis-generation/SKILL.md), K-Dense Inc., v2.4 | Evidence-bounded research questions, candidate and rival explanations, discriminating predictions, measurement and test design, uncertainty, and transparent separation of planned and exploratory work. |
 
 Reviewed snapshots:
 - literature-guide-read: f47dbd8a5ca7d5568b60c2d8da53125257f9e2c9.
@@ -45,6 +46,34 @@ The adaptation uses a conversational chapter loop, user-directed detours, explic
 - Choose checks according to the target and gaps, and agree later review with the user.
 - The upstream separate course-file layout, fixed phase or assessment counts, and optional calendar intervals are adapted to the user's existing organization and learning preferences. Logging and new-path creation remain subject to the user's approval rules.
 
+## Hypothesis-generation adaptation
+
+- Ground questions in traceable literature, observations, assumptions,
+  and derivations, with a documented search boundary for
+  literature-dependent claims.
+- Invite the user's explanation, expand plausible rivals, and compare
+  their predictions. The user chooses priorities through evidence
+  and trade-offs.
+- Connect questions to proof or counterexample, implementation checks,
+  or method-performance tests as appropriate.
+- Reuse the agreed comparison-metric structure and cumulative vin-log
+  conventions.
+- Record predictions and interpretation criteria before target results,
+  distinguish exploratory changes, and preserve dated plans and results.
+- Keep learning attainment under the existing whiteboard standard
+  separate from scientific support.
+- The proof/implementation/performance distinction, user-led learning,
+  and vin-log integration reflect user-confirmed design decisions.
+  Upstream scripts and full JSON/CSV schemas are not imported.
+
+Reviewed the candidate-lifecycle and human-review guidance,
+experimental-design and preregistration references, and the
+hypothesis-record and prediction/rival templates at the Scientific
+Agent Skills snapshot listed above.
+
+The existing Scientific Agent Skills MIT notice also covers this
+adaptation of hypothesis-generation.
+
 ## Authoring and preparation support
 
 - **skill-creator**, supplied with Codex: consulted for scope, concise instructions, and supporting references.
@@ -59,7 +88,6 @@ Local authoring and preparation revisions are not pinned in this register. These
 | Skill | Status |
 | --- | --- |
 | [citation-management](https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/citation-management/SKILL.md) | Consulted; a dedicated bibliography workflow remains pending. |
-| [hypothesis-generation](https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/hypothesis-generation/SKILL.md) | Consulted; research-question and experiment-planning integration remains pending. |
 | [learn-codebase](https://github.com/ktaletsk/learn-codebase/blob/main/SKILL.md) | Consulted for future code learning and invocation examples; its platform-specific instructions were not imported. |
 | Superpowers: [systematic-debugging](https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md) and [verification-before-completion](https://github.com/obra/superpowers/blob/main/skills/verification-before-completion/SKILL.md) | Consulted for future engineering work; neither workflow is implemented in this version. |
 
