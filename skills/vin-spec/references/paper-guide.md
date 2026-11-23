@@ -8,6 +8,11 @@ Use the agreed goal and existing progress. Briefly explain what the current chap
 
 For a long chapter, propose manageable units that preserve a complete piece of reasoning. Adjust the depth with the user.
 
+When reading is part of a broader learning route, use
+[learning-coach.md](learning-coach.md) as needed to plan or revise
+milestones and restore linked project progress.
+Use the chapter loop below for the current reading session.
+
 ## Adaptive diagnostic
 
 - Read existing progress before asking diagnostic questions.
@@ -101,3 +106,7 @@ At a pause or agreed checkpoint, prepare a short record of:
 - Each assessed derivation's state, attainment or reconfirmation status, date, assistance, and evidence basis.
 
 Follow SKILL.md's approval and logging rules before saving. Keep detailed knowledge in its stable record and put a short summary with links in the dated journal. Reuse existing records rather than duplicating the same paper or theory.
+
+When the paper belongs to a project, keep the project's current focus
+and next action aligned with the paper record.
+Link to detailed derivation evidence in its stable knowledge record.

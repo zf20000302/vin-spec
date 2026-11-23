@@ -41,4 +41,12 @@ The working environments covered include MATLAB, Ubuntu, ROS / ROS 2, C++, and P
 
 ## Current Status
 
-The first paper-guide mode is defined in [SKILL.md](skills/vin-spec/SKILL.md) and its [reading guide](skills/vin-spec/references/paper-guide.md). It supports explicit and natural invocation once loaded into Codex. Other workflows remain under discussion; installation and verification on each computer are separate setup steps.
+The [vin-spec entry](skills/vin-spec/SKILL.md) provides
+[paper-guide](skills/vin-spec/references/paper-guide.md)
+for guided paper reading and
+[learning-coach](skills/vin-spec/references/learning-coach.md)
+for learning routes, cumulative progress, and continuity across sessions.
+
+Both use the same explicit and natural entry methods once loaded
+into Codex. Other workflows remain under discussion;
+installation and verification on each computer are separate setup steps.

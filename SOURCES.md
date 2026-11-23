@@ -1,8 +1,8 @@
 # Sources and Adaptations
 
-Draft date: 2026-11-22.
+Last updated: 2026-11-23.
 
-This register distinguishes methods used in the current paper-guide draft, authoring support, and candidates consulted during the wider design discussion. A listed candidate is not automatically an implemented mode or a runtime dependency.
+This register distinguishes methods used in the current vin-spec workflows, authoring support, and candidates consulted during the wider design discussion. A listed candidate is not automatically an implemented mode or a runtime dependency.
 
 ## Confirmed design decisions
 
@@ -18,11 +18,13 @@ These decisions are recorded separately from the upstream authors' rules.
 | [literature-review](https://github.com/K-Dense-AI/scientific-agent-skills/blob/ec59a29a03d5c40f73ab40878df04860bc00e876/skills/literature-review/SKILL.md), K-Dense Inc., v1.11 | Linking summarized claims to the actual source and preserving the scope of the supporting evidence. Its complete search and review workflow is not implemented in this version. |
 | [scientific-critical-thinking](https://github.com/K-Dense-AI/scientific-agent-skills/blob/ec59a29a03d5c40f73ab40878df04860bc00e876/skills/scientific-critical-thinking/SKILL.md), K-Dense Inc., v1.5 | Attention to assumptions, reasoning, claim scope, and the distinction between missing information and a demonstrated error. Its full appraisal workflow is not implemented in this version. |
 | [socratic-tutor](https://github.com/janestreet/agent_skills/blob/469868f4489cbdbe178c775a0af05bb6bef63689/socratic-tutor/SKILL.md), Jane Street Group, LLC | Focused questions about reasons, predictions, new examples, and missing conditions; evidence-based feedback and progress checks. The diagnostic and 0–5 states are adapted below. |
+| [learning-coach](https://github.com/cheng-dp/learning-coach-skill/blob/a64963bee49fee0e3aba1b5af648e545bb48bba0/SKILL.md) and its [workflow references](https://github.com/cheng-dp/learning-coach-skill/tree/a64963bee49fee0e3aba1b5af648e545bb48bba0/references), cheng-dp / Learning Coach Skill contributors | Goal-based milestones, progress-informed session planning, durable checkpoints, adaptive routes, and targeted review. Adapted to the existing vin-log classification and whiteboard-derivation standard. |
 
 Reviewed snapshots:
 - literature-guide-read: f47dbd8a5ca7d5568b60c2d8da53125257f9e2c9.
 - Scientific Agent Skills: ec59a29a03d5c40f73ab40878df04860bc00e876.
 - Jane Street agent_skills: 469868f4489cbdbe178c775a0af05bb6bef63689.
+- Learning Coach Skill: a64963bee49fee0e3aba1b5af648e545bb48bba0.
 
 The adaptation uses a conversational chapter loop, user-directed detours, explicit return points, and vin-log checkpoints. Upstream HTML generation, scripts, assets, and fixed reading-density quotas are not included in this draft. Detailed mathematical checking also reflects the user's requirements and the design discussion.
 
@@ -33,6 +35,15 @@ The adaptation uses a conversational chapter loop, user-directed detours, explic
 - Redefine the 0–5 progression for named mathematical targets. Keep not assessed separate from level 0, make independent handwritten derivation the level-4 target, and use level 5 for optional transfer and teaching.
 - Distinguish attainment in one attempt from reconfirmation on another occasion. Record the date, assistance, the user's confirmation of independence, and which written reasoning was reviewed.
 - Detailed rules are in paper-guide.md. The upstream fixed diagnostic gate, mandatory failed attempts before explanation, automatic progress graphics, and unannounced retests are not carried over.
+
+## Learning-coach adaptation
+
+- Describe milestones through research purpose, learning material, prerequisites, observable abilities, and completion checks.
+- Map route and progress roles to the existing project, paper, derivation, concept, and journal conventions. Keep detailed evidence in stable knowledge records and link to it from summaries.
+- Separate activity completion from demonstrated understanding. Reuse paper-guide's target-specific whiteboard standard and evidence rules.
+- Resume from synced records, preserving the exact position, unfinished task, and detour return points.
+- Choose checks according to the target and gaps, and agree later review with the user.
+- The upstream separate course-file layout, fixed phase or assessment counts, and optional calendar intervals are adapted to the user's existing organization and learning preferences. Logging and new-path creation remain subject to the user's approval rules.
 
 ## Authoring and preparation support
 
@@ -47,7 +58,6 @@ Local authoring and preparation revisions are not pinned in this register. These
 
 | Skill | Status |
 | --- | --- |
-| [learning-coach](https://github.com/cheng-dp/learning-coach-skill/blob/main/SKILL.md) | Consulted for learning continuity; its course files and full workflow were not imported. |
 | [citation-management](https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/citation-management/SKILL.md) | Consulted; a dedicated bibliography workflow remains pending. |
 | [hypothesis-generation](https://github.com/K-Dense-AI/scientific-agent-skills/blob/main/skills/hypothesis-generation/SKILL.md) | Consulted; research-question and experiment-planning integration remains pending. |
 | [learn-codebase](https://github.com/ktaletsk/learn-codebase/blob/main/SKILL.md) | Consulted for future code learning and invocation examples; its platform-specific instructions were not imported. |
@@ -57,7 +67,7 @@ Add future sources and describe their actual contribution when they are consulte
 
 ## Upstream MIT notices
 
-The upstream license files are [literature-guide-read LICENSE](https://github.com/Liangzhen-Chen/literature-guide-read/blob/f47dbd8a5ca7d5568b60c2d8da53125257f9e2c9/LICENSE), [Scientific Agent Skills LICENSE.md](https://github.com/K-Dense-AI/scientific-agent-skills/blob/ec59a29a03d5c40f73ab40878df04860bc00e876/LICENSE.md), and [Jane Street agent_skills LICENSE.md](https://github.com/janestreet/agent_skills/blob/469868f4489cbdbe178c775a0af05bb6bef63689/LICENSE.md).
+The upstream license files are [literature-guide-read LICENSE](https://github.com/Liangzhen-Chen/literature-guide-read/blob/f47dbd8a5ca7d5568b60c2d8da53125257f9e2c9/LICENSE), [Scientific Agent Skills LICENSE.md](https://github.com/K-Dense-AI/scientific-agent-skills/blob/ec59a29a03d5c40f73ab40878df04860bc00e876/LICENSE.md), [Jane Street agent_skills LICENSE.md](https://github.com/janestreet/agent_skills/blob/469868f4489cbdbe178c775a0af05bb6bef63689/LICENSE.md), and [Learning Coach Skill LICENSE](https://github.com/cheng-dp/learning-coach-skill/blob/a64963bee49fee0e3aba1b5af648e545bb48bba0/LICENSE).
 
 MIT License
 
@@ -69,6 +79,9 @@ Copyright (c) 2025 K-Dense Inc.
 
 For socratic-tutor:
 Copyright (c) 2026 Jane Street Group, LLC <opensource-contacts@janestreet.com>
+
+For learning-coach:
+Copyright (c) 2026 Learning Coach Skill contributors
 
 The following permission and warranty text is shared by those upstream licenses:
 
