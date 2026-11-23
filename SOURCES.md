@@ -8,7 +8,7 @@ This register distinguishes methods used in the current vin-spec workflows, auth
 
 The vin-spec design discussions established the single entry, explicit and natural invocation, chapter-led reading, the user's explanations and answers, interruptible teaching detours, return points, the independent whiteboard-derivation standard, cumulative vin-log records, and approval before creating files or folders.
 
-These decisions are recorded separately from the upstream authors' rules. Explicit authorization can delegate automatic integration of agreed workflows.
+These decisions are recorded separately from the upstream authors' rules. Explicit authorization can delegate automatic content integration within an agreed task and confirmed arrangement. Folder structures, module roles, code placement, and reorganizations require the user's confirmation; an integration request alone does not approve them.
 
 ## Methods used in current workflows
 

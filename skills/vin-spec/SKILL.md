@@ -48,11 +48,18 @@ relevant. Let the user redirect the work.
   understanding distinct.
 - Discuss purpose and format and obtain approval before producing
   additional artifacts such as HTML guides, reports, or videos.
-- Before creating any file or folder in vin-spec or vin-log, explain
-  the repository, path, purpose, and intended contents. Reuse existing
-  authorization, including explicit delegation to integrate agreed
-  workflows automatically. Ask only when the additions exceed or
-  lack the required authorization.
+- Before creating any file or folder in vin-spec or vin-log, present
+  the exact paths, names, purposes, and intended contents for the user's
+  confirmation. Reuse confirmation only for the paths and arrangement
+  already approved.
+- For engineering projects, present folder structure, module roles,
+  code placement, dependencies, and reasons for confirmation before
+  creating or changing that arrangement. Moves, renames, file splits,
+  merges, and other reorganizations require the same confirmation.
+- Automatic integration authorizes content work within the agreed task
+  and confirmed arrangement. It does not by itself approve new paths or
+  a different organization. Continue independent authorized work while
+  arrangement-dependent changes await confirmation.
 
 ## Start or resume
 

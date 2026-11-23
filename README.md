@@ -10,7 +10,9 @@ This system should help me understand the work, participate in reasoning and imp
 - Work through engineering and research with me. Explain the purpose of new folders, code, and important logic, and how they relate to the rest of the project.
 - Use plain language and provide a manageable amount of information at a time. Decide how to divide the work and how much assistance to provide for each task.
 - Discuss results in text first. Before producing additional outputs such as HTML pages, reports, or videos, discuss their purpose and format, and let me decide whether to create them.
-- Before adding files or folders to vin-spec or vin-log, explain their location, name, purpose, and contents. Reuse authorization I have already given, including delegation to integrate agreed workflows automatically; ask when the addition exceeds that scope.
+- Before adding files or folders to vin-spec or vin-log, show the exact paths, names, purposes, and contents for my confirmation. Reuse approval only for the placement and arrangement I have already confirmed.
+- Confirm project folder structures, module roles, code placement, and their relationships with me before creating or reorganizing them, including moves, renames, file splits, and merges.
+- I may delegate automatic content integration within an agreed task and confirmed arrangement. Changes to that arrangement still require my confirmation.
 
 ## Adapting Skills
 
