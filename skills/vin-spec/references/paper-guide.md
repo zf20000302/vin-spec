@@ -13,6 +13,11 @@ When reading is part of a broader learning route, use
 milestones and restore linked project progress.
 Use the chapter loop below for the current reading session.
 
+Use [literature-review.md](literature-review.md) when selecting or
+comparing papers, [scientific-critical-thinking.md](scientific-critical-thinking.md)
+for a reliability appraisal, and [citation-management.md](citation-management.md)
+for source identity and claim-support checks as the task requires.
+
 ## Adaptive diagnostic
 
 - Read existing progress before asking diagnostic questions.

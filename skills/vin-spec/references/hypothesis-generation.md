@@ -18,6 +18,12 @@ For literature-dependent claims, document the search boundary.
 Treat novelty as unresolved until the available search and appraisal
 justify the claim.
 
+Use [literature-review.md](literature-review.md) for an evidence map
+and search boundary, [citation-management.md](citation-management.md)
+for source identity and support, and
+[scientific-critical-thinking.md](scientific-critical-thinking.md)
+for the reliability of premises and validation.
+
 ## Compare candidate explanations
 
 Invite the user's explanation in their own words. Follow requests

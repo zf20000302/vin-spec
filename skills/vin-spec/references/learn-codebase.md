@@ -75,6 +75,11 @@ requests implementation or a fix, explain the intended change and
 proceed within the authorized scope. Apply the relevant verification,
 logging, and file-approval rules.
 
+Use [systematic-debugging.md](systematic-debugging.md) for a requested
+failure investigation and
+[verification-before-completion.md](verification-before-completion.md)
+for the resulting completion claims.
+
 Use [hypothesis-generation.md](hypothesis-generation.md) when a claim
 about method performance or mechanism needs a discriminating test.
 Use [learning-coach.md](learning-coach.md) when the work changes the

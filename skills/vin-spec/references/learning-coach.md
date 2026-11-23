@@ -25,6 +25,9 @@ When a gap requires a detour, preserve the interrupted task and return
 point. Explain route changes and retain completed work and the reason
 for the change.
 
+Use [literature-review.md](literature-review.md) when mapping the field
+or selecting the reading route.
+
 ## Coordinate the current session
 
 Briefly state the focus, why it comes next, and the intended outcome.
@@ -35,6 +38,11 @@ explanations, or planning validation, follow
 [hypothesis-generation.md](hypothesis-generation.md).
 Link the next verification action to the learning route.
 Keep learning attainment and scientific support separately recorded.
+
+For a session involving a failure or fix, use
+[systematic-debugging.md](systematic-debugging.md) and
+[verification-before-completion.md](verification-before-completion.md)
+as relevant to the requested work.
 
 For implementation reading, data-flow tracing, or formula-to-code
 connections, follow [learn-codebase.md](learn-codebase.md).

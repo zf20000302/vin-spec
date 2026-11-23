@@ -10,7 +10,7 @@ This system should help me understand the work, participate in reasoning and imp
 - Work through engineering and research with me. Explain the purpose of new folders, code, and important logic, and how they relate to the rest of the project.
 - Use plain language and provide a manageable amount of information at a time. Decide how to divide the work and how much assistance to provide for each task.
 - Discuss results in text first. Before producing additional outputs such as HTML pages, reports, or videos, discuss their purpose and format, and let me decide whether to create them.
-- Before adding files or folders to vin-spec or vin-log, explain their location, name, purpose, and contents, and obtain my approval before creating them.
+- Before adding files or folders to vin-spec or vin-log, explain their location, name, purpose, and contents. Reuse authorization I have already given, including delegation to integrate agreed workflows automatically; ask when the addition exceeds that scope.
 
 ## Adapting Skills
 
@@ -22,7 +22,7 @@ The source register is [SOURCES.md](SOURCES.md) at the root of this repository. 
 
 ## Research and Mathematics
 
-The research workflow currently under discussion is:
+The research workflow combines:
 
 1. Map the literature related to the topic, its main research directions, and the value of reading each paper.
 2. Learn about important journals, classic papers, and highly cited work, then decide the reading order.
@@ -43,17 +43,22 @@ The working environments covered include MATLAB, Ubuntu, ROS / ROS 2, C++, and P
 
 ## Current Status
 
-The [vin-spec entry](skills/vin-spec/SKILL.md) provides:
+The [vin-spec entry](skills/vin-spec/SKILL.md) provides nine connected modes:
 
-- [paper-guide](skills/vin-spec/references/paper-guide.md)
-  for guided paper reading.
-- [learning-coach](skills/vin-spec/references/learning-coach.md)
-  for learning routes, cumulative progress, and continuity across sessions.
-- [hypothesis-generation](skills/vin-spec/references/hypothesis-generation.md)
-  for research questions, competing explanations, and verification plans.
-- [learn-codebase](skills/vin-spec/references/learn-codebase.md)
-  for guided code reading, execution and data-flow tracing, and formula-to-code connections.
+- [literature-review](skills/vin-spec/references/literature-review.md) for field mapping, paper selection, metric comparison, and synthesis.
+- [scientific-critical-thinking](skills/vin-spec/references/scientific-critical-thinking.md) for claim, assumption, derivation, validation, and applicability appraisal.
+- [citation-management](skills/vin-spec/references/citation-management.md) for source identity, versions, references, and claim-support checks.
+- [paper-guide](skills/vin-spec/references/paper-guide.md) for guided paper reading and independent derivation assessment.
+- [learning-coach](skills/vin-spec/references/learning-coach.md) for learning routes, cumulative progress, and continuity.
+- [hypothesis-generation](skills/vin-spec/references/hypothesis-generation.md) for research questions, rival explanations, and verification plans.
+- [learn-codebase](skills/vin-spec/references/learn-codebase.md) for guided implementation reading, data flow, and formula-to-code mapping.
+- [systematic-debugging](skills/vin-spec/references/systematic-debugging.md) for evidence-based failure investigation and scoped correction.
+- [verification-before-completion](skills/vin-spec/references/verification-before-completion.md) for checks and evidence supporting completion claims.
 
-All four modes use the same explicit and natural entry methods once
-loaded into Codex. Other workflows remain under discussion;
-installation and verification on each computer are separate setup steps.
+All modes share explicit and natural entry methods once loaded into Codex.
+The selected Socratic rules are incorporated into paper-guide and reused
+where relevant.
+
+SDD, OpenSpec, Spec Kit, and other engineering candidates remain under
+discussion as recorded in [SOURCES.md](SOURCES.md). Installation and
+verification on each computer are separate setup steps.
