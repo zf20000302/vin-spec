@@ -1,6 +1,6 @@
 # Sources and Adaptations
 
-Last updated: 2026-11-23.
+Last updated: 2026-11-24.
 
 This register distinguishes methods used in the current vin-spec workflows, authoring support, and candidates consulted during the wider design discussion. A listed candidate is not automatically an implemented mode or a runtime dependency.
 
@@ -195,6 +195,15 @@ Local authoring and preparation revisions are not pinned in this register. These
 | --- | --- |
 | [OpenSpec](https://github.com/Fission-AI/OpenSpec/blob/0c737dc1b543249b38b0f4716816fcf493d894dd/README.md) | Its conceptual workflow informs the SDD adaptation above; OpenSpec-specific setup, generated layout, and execution remain pending. |
 | [Spec Kit](https://github.com/github/spec-kit/blob/a4d571229e164e440f8950cac034607bae7b7518/README.md) | Its conceptual workflow informs the SDD adaptation above; Spec Kit-specific setup, generated layout, and execution remain pending. |
+| [BMad Method overview](https://github.com/bmad-code-org/BMAD-METHOD/blob/e435a22574fe55722841086e5566420178b98df3/README.md) | Inspected on 2026-11-24 as an engineering-method candidate. This snapshot describes main as the v7 preview and identifies v6.12 as stable. No BMad installation, generated arrangement, role orchestration, or runtime dependency is adopted. |
+| [bmad-deep-recon](https://github.com/bmad-code-org/BMAD-METHOD/blob/e435a22574fe55722841086e5566420178b98df3/skills/core-tools/bmad-deep-recon/SKILL.md) | Candidate for decision-focused technical investigation and selection. The local selection shape and technical pack were also inspected for requirements, evidence, cost, and reversibility; those local reference revisions are not pinned. Existing SDD approach comparison overlaps with this method. No workflow is adopted. |
+| [bmad-review](https://github.com/bmad-code-org/BMAD-METHOD/blob/e435a22574fe55722841086e5566420178b98df3/skills/core-tools/bmad-review/SKILL.md) | Candidate for explicit review perspectives. The local configuration, edge-case lens, and verification-gap lens were inspected to understand path handling and whether tests detect specific regressions; those local reference revisions are not pinned. No review run or mandatory lens set is adopted. |
+| [bmad-architecture](https://github.com/bmad-code-org/BMAD-METHOD/blob/e435a22574fe55722841086e5566420178b98df3/skills/method/bmad-architecture/SKILL.md) | Candidate for shared system rules across separately implemented parts: boundaries, dependencies, state changes, and ownership of shared data. Existing vin-spec module and algorithm proposals already cover part of this need. No architecture workflow or new artifact is adopted. |
+| [bmad-build](https://github.com/bmad-code-org/BMAD-METHOD/blob/e435a22574fe55722841086e5566420178b98df3/skills/method/bmad-build/SKILL.md) | Inspected for overlap with the existing plan, implementation, review, and verification stages. Its dispatcher was read; its rendered workflow was not executed or assessed. No separate mode or setup is adopted. |
+| [bmad-retrospective](https://github.com/bmad-code-org/BMAD-METHOD/blob/e435a22574fe55722841086e5566420178b98df3/skills/method/bmad-retrospective/SKILL.md) | Candidate for evidence-based reflection after a completed engineering stage, with actionable follow-up. Its dispatcher and stated purpose were inspected; its rendered workflow was not executed or assessed. No retrospective workflow is adopted. |
+| [bmad-eval](https://github.com/bmad-code-org/BMAD-METHOD/blob/e435a22574fe55722841086e5566420178b98df3/skills/toolsmith/bmad-eval/SKILL.md) and its [evaluation format](https://github.com/bmad-code-org/BMAD-METHOD/blob/e435a22574fe55722841086e5566420178b98df3/skills/toolsmith/bmad-eval/references/eval-format.md) | Candidate for testing skill behavior, comparing a baseline or a smaller/prior variant, and checking activation on relevant and irrelevant requests. No runner, case files, rubric, harness, or evaluation results are imported or claimed. |
+
+BMad source snapshot inspected for this comparison: e435a22574fe55722841086e5566420178b98df3. The local copies of bmad-deep-recon and bmad-review were inspected separately; this pin does not establish the revisions of those installed copies. These entries record candidate inspection, not vin-spec adoption. The original source's [license](https://github.com/bmad-code-org/BMAD-METHOD/blob/e435a22574fe55722841086e5566420178b98df3/LICENSE) and [trademark guidance](https://github.com/bmad-code-org/BMAD-METHOD/blob/e435a22574fe55722841086e5566420178b98df3/TRADEMARK.md) remain applicable to that source.
 
 Add future sources and describe their actual contribution when they are consulted or adopted.
 
