@@ -12,6 +12,7 @@ description: >
 # vin-spec
 
 Use the relevant mode for the user's research or engineering task.
+Follow [Start or resume](#start-or-resume) when beginning or resuming work.
 
 ## Two ways to start
 
@@ -88,15 +89,86 @@ only the relevant approval already given.
 
 ## Start or resume
 
-1. Identify the research or engineering goal and relevant topic or
-   project. For paper or code work, locate the source and version.
-   Ask only for missing information that affects the task.
-2. Use the configured vin-log location or authenticated connection
-   to read relevant existing progress. Ask when access is unavailable.
-3. Briefly state the current position, remaining gap, and next action.
-4. Base continuation on the latest successfully synced record.
-   If a source or implementation changed, check the relevant content
-   before relying on the earlier interpretation.
+Read the active conversation and relevant existing preferences and
+progress through the configured vin-log location or authenticated
+connection. Ask for missing context if access is unavailable.
+
+On first use, or when a relevant setting is missing or has changed,
+ask a compact opening check in the user's language:
+
+- **Task:** What should we work on, and is this new work or a continuation?
+- **Terminal collaboration:** Should the user run the commands, should
+  Codex wait for confirmation of each command group, or should Codex
+  explain and then run commands within the authorized scope?
+- **Explanation depth:** Explain the purpose and important parameters,
+  or walk through commands line by line?
+
+Reuse answers already provided in the conversation or approved records.
+Ask only questions that affect the current task; ask terminal-related
+questions before terminal work when those choices are unknown. Wait for
+the answers needed for that work rather than silently selecting a mode.
+Read relevant existing records to prepare the opening check, with the
+same before-and-after explanation for any terminal reads. Honor an
+existing instruction reserving command execution to the user.
+
+For terminal work, establish the actual environment and absolute working
+directory. Reuse known information, such as the user's Ubuntu development
+environment, and clarify or inspect only missing details such as local,
+remote, container, or WSL execution. Keep the intended development
+environment distinct from the environment actually available.
+
+Briefly summarize the goal, current position, remaining gap, next action,
+and the applicable agreed collaboration mode and explanation depth.
+For paper or code work, locate the source and version. Base continuation
+on the latest successfully synced record; check relevant source or
+implementation changes before relying on an earlier interpretation.
+
+### Terminal collaboration modes
+
+- **User executes:** Provide commands and explanations, then wait for
+  the user to execute them and return results. Do not run those commands
+  on the user's behalf or assume an outcome.
+- **Confirm before execution:** Present each coherent command group,
+  its purpose, and effects; wait for the user's confirmation before
+  running it. Reuse confirmation for that unchanged group.
+- **Explain then execute:** Explain each coherent command group, execute
+  within existing task authorization, and report the actual outcome.
+
+The user can change the mode or explanation depth at any time.
+Execution preferences do not replace algorithm proposals or confirmation
+of file paths, folder structures, module roles, and code placement.
+Record selected preferences only under the existing logging rules and
+in an approved location; request confirmation before creating a new
+settings file or changing its placement.
+
+## Terminal operations
+
+Apply these rules across modes whenever terminal commands are used:
+
+- **Before execution:** State the purpose, actual environment, absolute
+  working directory, commands to be run, and expected effects. Explain
+  important parameters at the agreed depth, distinguish reading from
+  changes to files or the environment, and redact secret values.
+  Make consequential script steps understandable rather than hiding
+  their effects behind a script invocation.
+- **After execution:** Report success, failure, or continued execution,
+  key output, and observed changes to files or the environment. Identify
+  the commands actually executed, including retries and deviations
+  from the announced group, and explain the next action. Explain a
+  changed command before running it and obtain confirmation when the
+  selected mode or the existing authorization requires it.
+- **Proportionate detail:** Group related searches and reads under one
+  clear purpose. Explain the scope and effects of installations,
+  environment changes, builds, and service launches explicitly.
+- **Long-running or background work:** Announce the launch and purpose.
+  After starting it, provide the available process or session identifier,
+  relevant ports and existing log location when applicable, how to check
+  progress, and how to stop it. Report meaningful progress, failures,
+  and completion; at handoff, identify work still running.
+- **Reproducibility:** Summarize important setup, build, and run commands
+  and their results in approved existing project records when logging
+  is authorized. A new log file or other generated path still follows
+  the arrangement-confirmation rules.
 
 ## Records
 
